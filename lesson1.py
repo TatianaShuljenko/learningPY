@@ -20,3 +20,7 @@ print("the poem lengh is",str(a))
 #4
 todos='get gloves,get mask,give cat vitamins,call ambulance'
 print(todos.split(','))
+#5
+one_list=['Yeti','Bigfoot','NLO']
+second_list=','.join(one_list)
+print('Found and signing book deals:',second_list)
