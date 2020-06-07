@@ -54,6 +54,15 @@ print(poem2.startswith('Тихо строится река серебриста�
 print(poem2.startswith('Тихо струится река серебристая'))
 print(poem2.endswith('небу земля.'))
 word='песни'
-print(poem2.find(word))
-print(poem2.rfind(word))
-print(poem2.count(word))
+print(poem2.find(word),poem2.rfind(word),poem2.count(word))
+#8
+duck='a duck goes into a bar...'
+notaduck=duck.replace('duck','marmoset')
+print(notaduck)
+#9
+secondsInMinute = 60
+minutesInHour= 60
+secondsInHour = secondsInMinute * minutesInHour
+HoursInDay=24
+secondsInDay=HoursInDay*secondsInHour
+print('Секунд в часе:', secondsInHour,'Cекунд в сутках:', secondsInDay)
