@@ -24,3 +24,36 @@ print(todos.split(','))
 one_list=['Yeti','Bigfoot','NLO']
 second_list=','.join(one_list)
 print('Found and signing book deals:',second_list)
+print(type(one_list))
+#6 split
+list1='Зонтик, телефон, ключи, ручка, блокнот'
+list2=(list1.split(','))
+print(list2)
+# join
+list3=['Навозный жук', 'Жук майский','Жужелица крымская']
+list4='***'.join(list3)
+print(list4)
+#7
+poem2='''Тихо струится река серебристая
+В царстве вечернем зеленой весны.
+Солнце садится за горы лесистые,
+Рог золотой выплывает луны.
+
+Запад подернулся лентою розовой,
+Пахарь вернулся в избушку с полей,
+И за дорогою в чаще березовой
+Песню любви затянул соловей.
+
+Слушает ласково песни глубокие
+С запада розовой лентой заря.
+С нежностью смотрит на звезды далекие
+И улыбается небу земля.'''
+print(poem2[0:13])
+print(len(poem2))
+print(poem2.startswith('Тихо строится река серебристая'))
+print(poem2.startswith('Тихо струится река серебристая'))
+print(poem2.endswith('небу земля.'))
+word='песни'
+print(poem2.find(word))
+print(poem2.rfind(word))
+print(poem2.count(word))
