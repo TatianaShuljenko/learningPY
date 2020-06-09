@@ -42,3 +42,30 @@ print('Отсортированные значения по убыванию:', 
 sorted_dayweeks=sorted(weekdays)
 print(sorted_dayweeks)
 print(len(weekdays))
+#
+old_numbers=numbers.copy()
+print(old_numbers)
+#Кортежи
+marx_tuple='Groucho','Chico','Harpo'
+print(marx_tuple)
+# tuple
+marx_list=['Groucho','Chico','Harpo']
+print(tuple(marx_list))
+#Словарь
+empty_dict={}
+print(empty_dict)
+#
+lol=[['a','b'],['c','d'],['e','f']]
+print('Преобразование в словарь:',dict(lol))
+#Список, содержащий двухэлементныйе кортежи
+lot=[('a','b'),('c','d'),('e','f')]
+print(dict(lot))
+#Кортеж, включающий двухэлемнтные строки
+tol=(['a','b'],['c','d'],['e','f'])
+print(dict(tol))
+#Список, содержащий двухэлементные строки 
+los=['ab','cd','ef']
+print(dict(los))
+#Кортеж, содержащий двухсимвольные строки
+tos=('ab','bc','ef')
+print(dict(tos))
