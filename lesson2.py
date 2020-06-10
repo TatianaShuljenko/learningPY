@@ -69,3 +69,15 @@ print(dict(los))
 #Кортеж, содержащий двухсимвольные строки
 tos=('ab','bc','ef')
 print(dict(tos))
+#Объединение словарей
+firstNames='Chapman','Cleese','Gilliam','Idle','Jones','Palin'
+surnames='Graham','John','Terry','Eric','Terry','Michael'
+dictionary_of_pythons=dict(zip(surnames,firstNames))
+print('Словарь из ключей-фамилий и имён-значений:\n',dictionary_of_pythons)
+print(dictionary_of_pythons['John'])
+otherNames='Groucho','Moe'
+otherSurnames='Marx','Howard'
+otherPeople=(dict(zip(otherSurnames,otherNames)))
+print('Список комиков: \n', otherPeople)
+dictionary_of_pythons.update(otherPeople)
+print('Cписок всех людей:\n', dictionary_of_pythons)
