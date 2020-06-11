@@ -81,3 +81,30 @@ otherPeople=(dict(zip(otherSurnames,otherNames)))
 print('Список комиков: \n', otherPeople)
 dictionary_of_pythons.update(otherPeople)
 print('Cписок всех людей:\n', dictionary_of_pythons)
+#
+del dictionary_of_pythons ['Marx']
+print(dictionary_of_pythons)
+del dictionary_of_pythons ['Howard']
+print(dictionary_of_pythons)
+print('Terry' in dictionary_of_pythons)
+print(dictionary_of_pythons['John'])
+#
+years_list=['1995','1996','1997','1998','1999','2000']
+third_birthday=years_list[3]
+print('Моё третье ДР было в этом году -', third_birthday)
+last_year=years_list[5]
+print('Из перечисленных годов, старше я была в этом -', last_year)
+things=['mazzarella','cinderella','salmonella']
+things.remove('cinderella')
+things.insert(1,'Cinderella')
+print('Золушка в списке с большой буквы',things)
+things.remove('salmonella')
+things.insert(2,'SALMONELLA')
+print('Теперь сальмонелла капсом',things)
+del things [2]
+print('Список без сальмонеллы',things)
+surprise='Groucho','Chico','Harpo'
+surprise_list=list(surprise)
+print(surprise_list)
+surprise_list[2]='harpo'
+print('Последнее имя с маленькой буквы', surprise_list)
